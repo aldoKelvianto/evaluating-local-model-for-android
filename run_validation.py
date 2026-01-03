@@ -416,7 +416,7 @@ def process_all_files(file_mappings, kotlin_parser, KOTLIN_LANGUAGE, diff_parser
 
     results = []
 
-    kotlin_tasks = ['test1-preview', 'test1-unit-test', 'test3-instrumentation_test']
+    kotlin_tasks = ['test1-preview', 'test2-unit-test', 'test3-instrumentation-test']
     diff_tasks = ['test4-deprecated-material', 'test5-deprecated-plugin']
 
     for mapping in file_mappings:

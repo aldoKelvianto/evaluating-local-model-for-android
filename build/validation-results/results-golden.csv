@@ -1,0 +1,11 @@
+model_name,task,is_valid,success_validation_count,failed_validation_count,success_validation_list,failed_validation_list
+sonnet-4_5,test1-preview,True,2,0,"correct_syntax, has_preview_and_composable",None
+original,test1-preview,True,2,0,"correct_syntax, has_preview_and_composable",None
+sonnet-4_5,test2-unit-test,True,4,0,"correct_syntax, has_all_required_imports, has_use_case_constructor, has_exactly_two_test_functions",None
+original,test2-unit-test,True,4,0,"correct_syntax, has_all_required_imports, has_use_case_constructor, has_exactly_two_test_functions",None
+sonnet-4_5,test3-instrumentation-test,True,4,0,"correct_syntax, has_topic_entity_import, implements_database_test, has_at_least_5_tests",None
+original,test3-instrumentation-test,True,4,0,"correct_syntax, has_topic_entity_import, implements_database_test, has_at_least_5_tests",None
+sonnet-4_5,test4-deprecated-material,True,3,0,"correct_syntax, contains_all_deletions, contains_all_additions",None
+original,test4-deprecated-material,True,3,0,"correct_syntax, contains_all_deletions, contains_all_additions",None
+sonnet-4_5,test5-deprecated-plugin,True,3,0,"correct_syntax, contains_all_deletions, contains_all_additions",None
+original,test5-deprecated-plugin,True,3,0,"correct_syntax, contains_all_deletions, contains_all_additions",None

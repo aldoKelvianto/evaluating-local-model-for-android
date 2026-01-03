@@ -3,7 +3,7 @@ from tree_sitter import Language, Parser
 import csv
 import argparse
 import json
-
+import os
 
 def validate_preview_generation(kt_bytes, parser, KOTLIN_LANGUAGE):
     """Validate Kotlin code for Preview generation task."""
@@ -468,6 +468,8 @@ def process_all_files(file_mappings, kotlin_parser, KOTLIN_LANGUAGE, diff_parser
                 'success_validation_list': 'None',
                 'failed_validation_list': f'Error: {str(e)}'
             })
+
+    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
 
     with open(output_csv, 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['model_name', 'task', 'is_valid', 'success_validation_count',

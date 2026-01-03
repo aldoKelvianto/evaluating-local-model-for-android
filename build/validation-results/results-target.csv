@@ -1,0 +1,16 @@
+model_name,task,is_valid,success_validation_count,failed_validation_count,success_validation_list,failed_validation_list
+phi-4,test1-preview,False,1,1,has_preview_and_composable,correct_syntax
+gpt-oss,test1-preview,True,2,0,"correct_syntax, has_preview_and_composable",None
+devstral,test1-preview,True,2,0,"correct_syntax, has_preview_and_composable",None
+gemma-3,test1-preview,False,1,1,has_preview_and_composable,correct_syntax
+qwen3,test1-preview,False,1,1,has_preview_and_composable,correct_syntax
+phi-4,test4-deprecated-material,False,2,1,"correct_syntax, contains_all_deletions",contains_all_additions
+gpt-oss,test4-deprecated-material,False,2,1,"contains_all_deletions, contains_all_additions",correct_syntax
+devstral,test4-deprecated-material,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"
+gemma-3,test4-deprecated-material,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"
+qwen3,test4-deprecated-material,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"
+phi-4,test5-deprecated-plugin,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"
+gpt-oss,test5-deprecated-plugin,False,2,1,"contains_all_deletions, contains_all_additions",correct_syntax
+devstral,test5-deprecated-plugin,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"
+gemma-3,test5-deprecated-plugin,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"
+qwen3,test5-deprecated-plugin,False,1,2,correct_syntax,"contains_all_deletions, contains_all_additions"

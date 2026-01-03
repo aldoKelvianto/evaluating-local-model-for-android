@@ -1,4 +1,4 @@
-# Local Model for Android Code Generation
+# Evaluating Local Model for Android Development
 
 This project evaluates multiple local AI models for generating Kotlin code and code diffs for Android development tasks. It uses LangChain4j to connect to local models (via LM Studio) and validates the generated code using tree-sitter parsing.
 

@@ -1,0 +1,38 @@
+```diff
+--- a/TopBarApp.kt
++++ b/TopBarApp.kt
+@@ -10,7 +10,7 @@
+    modifier: Modifier = Modifier,
+    colors: TopAppBarColors = TopAppBarDefaults.centerAlignedTopAppBarColors(),
+    onNavigationClick: () -> Unit = {},
+-   onActionClick: () -> Unit = {},
++   onActionClick: () -> Unit = {},
+ ) {
+     CenterAlignedTopAppBar(
+         title = { Text(text = stringResource(id = titleRes)) },
+@@ -20,7 +20,7 @@
+         colors = colors,
+         modifier = modifier.testTag("niaTopAppBar"),
+     )
+-}
++}
+\ No newline at end of file
+--- a/NiaApp.kt
++++ b/NiaApp.kt
+@@ -49,7 +49,7 @@
+                        actionIconContentDescription = stringResource(
+                            id = settingsR.string.feature_settings_top_app_bar_action_icon_description,
+                        ),
+-                        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
++                        colors = TopAppBarDefaults.topAppBarColors(
+                            containerColor = Color.Transparent,
+                        ),
+                        onActionClick = { onTopAppBarActionClick() },
+@@ -57,4 +57,4 @@
+                }
+            }
+        }
+-    }
++    }
+\ No newline at end of file
+```

@@ -1,0 +1,47 @@
+--- a/app/build.gradle.kts
++++ b/app/build.gradle.kts
+@@ -17,7 +17,7 @@
+ import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+ import org.jetbrains.kotlin.gradle.dsl.KotlinTopLevelExtension
+ 
+-/**
++/// <summary>
+ /**
+  * Configure base Kotlin with Android options
+  */
+@@ -51,7 +51,7 @@
+ }
+ 
+ /**
+- * Configure base Kotlin options for JVM (non-Android)
++/// <summary>
+ /**
+  * Configure base Kotlin options for JVM (non-Android)
+  */
+@@ -83,7 +83,7 @@
+ }
+ 
+ /**
+- * Configure base Kotlin options
++/// <summary>
+ /**
+  * Configure base Kotlin options
+  */
+@@ -91,7 +91,7 @@
+     // Treat all Kotlin warnings as errors (disabled by default)
+     // Override by setting warningsAsErrors=true in your ~/.gradle/gradle.properties
+     val warningsAsErrors = providers.gradleProperty("warningsAsErrors").map {
+-        it.toBoolean()
++        it.toBooleanStrictOrFalse()
+     }.orElse(false)
+     when (this) {
+         is KotlinAndroidProjectExtension -> compilerOptions
+@@ -103,7 +103,7 @@
+         else -> TODO("Unsupported project extension $this ${T::class}")
+     }.apply {
+         jvmTarget = JvmTarget.JVM_11
+-        allWarningsAsErrors = warningsAsErrors
++        allWarningsAsErrors = warningsAsErrors.get()
+         freeCompilerArgs.add(
+             // Enable experimental coroutines APIs, including Flow
+             "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",

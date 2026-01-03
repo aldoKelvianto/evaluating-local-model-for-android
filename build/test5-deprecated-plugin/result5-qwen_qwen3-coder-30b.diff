@@ -1,0 +1,46 @@
+```diff
+--- a/com/google/samples/apps/nowinandroid/build.gradle.kts
++++ b/com/google/samples/apps/nowinandroid/build.gradle.kts
+@@ -1,5 +1,5 @@
+ package com.google.samples.apps.nowinandroid
+ 
+-import org.jetbrains.kotlin.gradle.dsl.KotlinTopLevelExtension
++import org.jetbrains.kotlin.gradle.dsl.KotlinBaseExtension
+ import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
+ import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+@@ -46,7 +46,7 @@
+  */
+ private inline fun <reified T : KotlinTopLevelExtension> Project.configureKotlin() = configure<T> {
+     // Treat all Kotlin warnings as errors (disabled by default)
+-    // Override by setting warningsAsErrors=true in your ~/.gradle/gradle.properties
++    // Override by setting warningsAsErrors=true in your ~/.gradle/gradle.properties
+     val warningsAsErrors = providers.gradleProperty("warningsAsErrors").map {
+         it.toBoolean()
+     }.orElse(false)
+@@ -54,7 +54,7 @@
+     when (this) {
+         is KotlinAndroidProjectExtension -> compilerOptions
+         is KotlinJvmProjectExtension -> compilerOptions
+-        else -> TODO("Unsupported project extension $this ${T::class}")
++        else -> TODO("Unsupported project extension $this ${T::class}")
+     }.apply {
+         jvmTarget = JvmTarget.JVM_11
+         allWarningsAsErrors = warningsAsErrors
+@@ -59,7 +59,7 @@
+         freeCompilerArgs.add(
+             // Enable experimental coroutines APIs, including Flow
+             "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
+         )
+-        freeCompilerArgs.add(
++        freeCompilerArgs.add(
+             /**
+              * Remove this args after Phase 3.
+              * https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-consistent-copy-visibility/#deprecation-timeline
+@@ -67,4 +67,4 @@
+              * '-Xconsistent-data-class-copy-visibility' compiler flag and ConsistentCopyVisibility annotation are now unnecessary.
+              */
+             "-Xconsistent-data-class-copy-visibility"
+-        )
++        )
+ }
+```

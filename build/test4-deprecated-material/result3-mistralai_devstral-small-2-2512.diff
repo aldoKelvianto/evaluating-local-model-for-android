@@ -1,0 +1,21 @@
+@@ -10,7 +10,7 @@
+     onActionClick: () -> Unit = {},
+ ) {
+     CenterAlignedTopAppBar(
+-        colors = colors,
++        colors = TopAppBarDefaults.topAppBarColors(),
+         modifier = modifier.testTag("niaTopAppBar"),
+     )
+ }
+@@ -85,9 +85,7 @@
+                 if (destination != null) {
+                     shouldShowTopAppBar = true
+                     NiaTopAppBar(
+-                        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+-                            containerColor = Color.Transparent,
+-                        ),
++                        colors = TopAppBarDefaults.topAppBarColors(),
+                         onActionClick = { onTopAppBarActionClick() },
+                         onNavigationClick = { appState.navigateToSearch() },
+                     )
+```

@@ -1,0 +1,32 @@
+--- a/TopBarApp.kt
++++ b/TopBarApp.kt
+@@ -10,7 +10,7 @@
+ @Composable
+ fun NiaTopAppBar(
+     @StringRes titleRes: Int,
+-    navigationIcon: ImageVector,
++    navigationIcon: ImageVector?,
+     navigationIconContentDescription: String,
+     actionIcon: ImageVector,
+     actionIconContentDescription: String,
+
+--- a/NiaApp.kt
++++ b/NiaApp.kt
+@@ -103,7 +103,7 @@
+                         titleRes = destination.titleTextId,
+                         navigationIcon = NiaIcons.Search,
+                         navigationIconContentDescription = stringResource(
+-                            id = settingsR.string.feature_settings_top_app_bar_navigation_icon_description,
++                                id = settingsR.string.feature_settings_top_app_bar_navigation_icon_description,
+                         ),
+                         actionIcon = NiaIcons.Settings,
+                         actionIconContentDescription = stringResource(
+@@ -112,7 +112,7 @@
+                         colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+                             containerColor = Color.Transparent,
+                         ),
+-                        onActionClick = { onTopAppBarActionClick() },
++                        onActionClick = { onTopAppBarActionClick() },
+                         onNavigationClick = { appState.navigateToSearch() },
+                     )
+                 }

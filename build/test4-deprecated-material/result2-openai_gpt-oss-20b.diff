@@ -1,0 +1,20 @@
+--- a/TopBarApp.kt
++++ b/TopBarApp.kt
+@@
+-    colors: TopAppBarColors = TopAppBarDefaults.centerAlignedTopAppBarColors(),
++    colors: TopAppBarColors = TopAppBarDefaults.topAppBarColors(),
+@@
+-        CenterAlignedTopAppBar(
++        CenterAlignedTopAppBar(
+@@
+-        colors = colors,
++        colors = colors,
+@@
+--- a/NiaApp.kt
++++ b/NiaApp.kt
+@@
+-                        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
++                        colors = TopAppBarDefaults.topAppBarColors(
+                             containerColor = Color.Transparent,
+                         ),
+*** End of File ***

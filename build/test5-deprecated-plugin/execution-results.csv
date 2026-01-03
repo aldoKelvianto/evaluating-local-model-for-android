@@ -1,0 +1,6 @@
+modelName,durationSeconds,inputTokenCount,outputTokenCount,totalTokenCount,startRamGb,peakRamGb,startVramGb,peakVramGb,resultPath
+microsoft/phi-4,23,923,831,1754,8.00,8.71,1.72,11.10,result1-microsoft_phi-4.diff
+openai/gpt-oss-20b,13,987,269,1256,8.00,10.11,2.01,12.54,result2-openai_gpt-oss-20b.diff
+mistralai/devstral-small-2-2512,34,975,368,1343,8.02,10.05,1.53,13.14,result3-mistralai_devstral-small-2-2512.diff
+google/gemma-3-27b,70,1068,413,1481,7.99,10.71,1.78,15.25,result4-google_gemma-3-27b.diff
+qwen/qwen3-coder-30b,41,936,469,1405,7.94,10.01,1.79,13.10,result5-qwen_qwen3-coder-30b.diff

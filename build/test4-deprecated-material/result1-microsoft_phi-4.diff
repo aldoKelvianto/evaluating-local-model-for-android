@@ -1,0 +1,78 @@
+```diff
+--- a/TopBarApp.kt
++++ b/TopBarApp.kt
+@@ -6,7 +6,7 @@ import androidx.compose.material.icons.Icons
+ import androidx.compose.material3.*
+ import androidx.compose.runtime.Composable
+ import androidx.compose.ui.Modifier
+-import androidx.compose.material3.TopAppBarDefaults.centerAlignedTopAppBarColors
++import androidx.compose.material3.TopAppBarDefaults.topAppBarColors
+
+ @OptIn(ExperimentalMaterial3Api::class)
+ @Composable
+ fun NiaTopAppBar(
+@@ -17,7 +17,7 @@ import androidx.compose.ui.graphics.Color
+     navigationIconContentDescription: String,
+     actionIcon: ImageVector,
+     actionIconContentDescription: String,
+-    colors: TopAppBarColors = TopAppBarDefaults.centerAlignedTopAppBarColors(),
++    colors: TopAppBarColors = TopAppBarDefaults.topAppBarColors(containerColor = Color.Transparent),
+     onNavigationClick: () -> Unit = {},
+     onActionClick: () -> Unit = {},
+ ) {
+@@ -41,7 +41,7 @@ import androidx.compose.ui.graphics.Color
+         title = { Text(text = stringResource(id = titleRes)) },
+         navigationIcon = {
+             IconButton(onClick = onNavigationClick) {
+-                Icon(
++                Icon(imageVector = navigationIcon,
+                     contentDescription = navigationIconContentDescription,
+                     tint = MaterialTheme.colorScheme.onSurface,
+                 )
+@@ -51,7 +51,7 @@ import androidx.compose.ui.graphics.Color
+         actions = {
+             IconButton(onClick = onActionClick) {
+-                Icon(
++                Icon(imageVector = actionIcon,
+                     contentDescription = actionIconContentDescription,
+                     tint = MaterialTheme.colorScheme.onSurface,
+                 )
+@@ -61,3 +61,4 @@ import androidx.compose.ui.graphics.Color
+         colors = colors,
+         modifier = modifier.testTag("niaTopAppBar"),
+     )
++}
+```
+
+```diff
+--- a/NiaApp.kt
++++ b/NiaApp.kt
+@@ -47,7 +47,7 @@ import androidx.compose.material3.*
+ import androidx.compose.runtime.Composable
+ import androidx.compose.ui.Modifier
+ import androidx.compose.ui.graphics.Color
+-import androidx.compose.material3.TopAppBarDefaults.centerAlignedTopAppBarColors
++import androidx.compose.material3.TopAppBarDefaults.topAppBarColors
+
+ @Composable
+ @OptIn(
+@@ -87,7 +87,7 @@ import androidx.compose.ui.res.stringResource
+                         actionIconContentDescription = stringResource(
+                             id = settingsR.string.feature_settings_top_app_bar_action_icon_description,
+                         ),
+-                        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
++                        colors = TopAppBarDefaults.topAppBarColors(
+                             containerColor = Color.Transparent,
+                         ),
+                         onActionClick = { onTopAppBarActionClick() },
+                         onNavigationClick = { appState.navigateToSearch() },
+@@ -107,3 +107,4 @@ import androidx.compose.ui.res.stringResource
+                 )
+             }
+         }
++    }
+```
+
+```diff
++ 
+```

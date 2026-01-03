@@ -1,0 +1,26 @@
+diff --git a/app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaApp.kt b/app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaApp.kt
+index defccdf3fa..5a32d45858 100644
+--- a/app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaApp.kt
++++ b/app/src/main/kotlin/com/google/samples/apps/nowinandroid/ui/NiaApp.kt
+@@ -216,7 +216,7 @@ internal fun NiaApp(
+                         actionIconContentDescription = stringResource(
+                             id = settingsR.string.feature_settings_top_app_bar_action_icon_description,
+                         ),
+-                        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
++                        colors = TopAppBarDefaults.topAppBarColors(
+                             containerColor = Color.Transparent,
+                         ),
+                         onActionClick = { onTopAppBarActionClick() },
+diff --git a/core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/TopAppBar.kt b/core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/TopAppBar.kt
+index f85c656770..ece8e02592 100644
+--- a/core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/TopAppBar.kt
++++ b/core/designsystem/src/main/kotlin/com/google/samples/apps/nowinandroid/core/designsystem/component/TopAppBar.kt
+@@ -45,7 +45,7 @@ fun NiaTopAppBar(
+     actionIcon: ImageVector,
+     actionIconContentDescription: String,
+     modifier: Modifier = Modifier,
+-    colors: TopAppBarColors = TopAppBarDefaults.centerAlignedTopAppBarColors(),
++    colors: TopAppBarColors = TopAppBarDefaults.topAppBarColors(),
+     onNavigationClick: () -> Unit = {},
+     onActionClick: () -> Unit = {},
+ ) {

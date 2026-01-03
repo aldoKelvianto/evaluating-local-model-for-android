@@ -1,0 +1,6 @@
+jupyter
+ipykernel
+kotlin-jupyter-kernel
+# Keep this version. Later version doesn't have capability to compile from so file
+# https://github.com/tree-sitter/py-tree-sitter/discussions/237
+tree-sitter==0.21.3

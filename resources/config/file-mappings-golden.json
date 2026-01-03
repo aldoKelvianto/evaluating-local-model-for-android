@@ -1,0 +1,52 @@
+[
+  {
+    "model_name": "sonnet-4_5",
+    "task": "test1-preview",
+    "file_path": "resources/golden-reference/claude-sonnet-4_5/test1-preview.kt"
+  },
+  {
+    "model_name": "original",
+    "task": "test1-preview",
+    "file_path": "resources/golden-reference/original/test1-preview.kt"
+  },
+  {
+    "model_name": "sonnet-4_5",
+    "task": "test2-unit-test",
+    "file_path": "resources/golden-reference/claude-sonnet-4_5/test2-unit-test.kt"
+  },
+  {
+    "model_name": "original",
+    "task": "test2-unit-test",
+    "file_path": "resources/golden-reference/original/test2-unit-test.kt"
+  },
+  {
+    "model_name": "sonnet-4_5",
+    "task": "test3-instrumentation-test",
+    "file_path": "resources/golden-reference/claude-sonnet-4_5/test3-instrumentation-test.kt"
+  },
+  {
+    "model_name": "original",
+    "task": "test3-instrumentation-test",
+    "file_path": "resources/golden-reference/original/test3-instrumentation-test.kt"
+  },
+  {
+    "model_name": "sonnet-4_5",
+    "task": "test4-deprecated-material",
+    "file_path": "resources/golden-reference/claude-sonnet-4_5/test4-deprecated-material.diff"
+  },
+  {
+    "model_name": "original",
+    "task": "test4-deprecated-material",
+    "file_path": "resources/golden-reference/original/test4-deprecated-material.diff"
+  },
+  {
+    "model_name": "sonnet-4_5",
+    "task": "test5-deprecated-plugin",
+    "file_path": "resources/golden-reference/claude-sonnet-4_5/test5-deprecated-plugin.diff"
+  },
+  {
+    "model_name": "original",
+    "task": "test5-deprecated-plugin",
+    "file_path": "resources/golden-reference/original/test5-deprecated-plugin.diff"
+  }
+]

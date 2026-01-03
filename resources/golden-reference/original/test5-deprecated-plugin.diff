@@ -1,0 +1,23 @@
+diff --git a/build-logic/convention/src/main/kotlin/com/google/samples/apps/nowinandroid/KotlinAndroid.kt b/build-logic/convention/src/main/kotlin/com/google/samples/apps/nowinandroid/KotlinAndroid.kt
+index c37d91c560..f713c0c978 100644
+--- a/build-logic/convention/src/main/kotlin/com/google/samples/apps/nowinandroid/KotlinAndroid.kt
++++ b/build-logic/convention/src/main/kotlin/com/google/samples/apps/nowinandroid/KotlinAndroid.kt
+@@ -26,8 +26,8 @@ import org.gradle.kotlin.dsl.dependencies
+ import org.gradle.kotlin.dsl.provideDelegate
+ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+ import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
++import org.jetbrains.kotlin.gradle.dsl.KotlinBaseExtension
+ import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
+-import org.jetbrains.kotlin.gradle.dsl.KotlinTopLevelExtension
+
+ /**
+  * Configure base Kotlin with Android options
+@@ -75,7 +75,7 @@ internal fun Project.configureKotlinJvm() {
+ /**
+  * Configure base Kotlin options
+  */
+-private inline fun <reified T : KotlinTopLevelExtension> Project.configureKotlin() = configure<T> {
++private inline fun <reified T : KotlinBaseExtension> Project.configureKotlin() = configure<T> {
+     // Treat all Kotlin warnings as errors (disabled by default)
+     // Override by setting warningsAsErrors=true in your ~/.gradle/gradle.properties
+     val warningsAsErrors: String? by project

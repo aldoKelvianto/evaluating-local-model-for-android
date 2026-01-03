@@ -1,0 +1,22 @@
+--- a/TopBarApp.kt
++++ b/TopBarApp.kt
+@@ -7,7 +7,7 @@
+     actionIcon: ImageVector,
+     actionIconContentDescription: String,
+     modifier: Modifier = Modifier,
+-    colors: TopAppBarColors = TopAppBarDefaults.centerAlignedTopAppBarColors(),
++    colors: TopAppBarColors = TopAppBarDefaults.topAppBarColors(),
+     onNavigationClick: () -> Unit = {},
+     onActionClick: () -> Unit = {},
+ ) {
+--- a/NiaApp.kt
++++ b/NiaApp.kt
+@@ -68,7 +68,7 @@
+                         actionIconContentDescription = stringResource(
+                             id = settingsR.string.feature_settings_top_app_bar_action_icon_description,
+                         ),
+-                        colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
++                        colors = TopAppBarDefaults.topAppBarColors(
+                             containerColor = Color.Transparent,
+                         ),
+                         onActionClick = { onTopAppBarActionClick() },

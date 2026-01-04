@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="Permanent Script Dependencies">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.cache/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.1-761-1/kotlin-jupyter-ide-classpath-shadowed-jar/kotlin-jupyter-ide-classpath-shadowed-0.15.1-761-1.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j/1.6.0/langchain4j-1.6.0.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-core/1.6.0/langchain4j-core-1.6.0.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/org/apache/opennlp/opennlp-tools/2.5.4/opennlp-tools-2.5.4.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-open-ai/1.6.0/langchain4j-open-ai-1.6.0.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-http-client/1.6.0/langchain4j-http-client-1.6.0.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/knuddels/jtokkit/1.1.0/jtokkit-1.1.0.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-http-client-jdk/1.6.0/langchain4j-http-client-jdk-1.6.0.jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/.cache/JetBrains/IntelliJIdea2025.3/kotlinNotebook/kernels/0.15.1-761-1/kotlin-jupyter-ide-classpath-shadowed-sources-jar/kotlin-jupyter-ide-classpath-shadowed-0.15.1-761-1-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j/1.6.0/langchain4j-1.6.0-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-core/1.6.0/langchain4j-core-1.6.0-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/org/apache/opennlp/opennlp-tools/2.5.4/opennlp-tools-2.5.4-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-open-ai/1.6.0/langchain4j-open-ai-1.6.0-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-http-client/1.6.0/langchain4j-http-client-1.6.0-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/com/knuddels/jtokkit/1.1.0/jtokkit-1.1.0-sources.jar" />
+      <root url="file:///var/home/bazzite/.m2/repository/dev/langchain4j/langchain4j-http-client-jdk/1.6.0/langchain4j-http-client-jdk-1.6.0-sources.jar" />
+    </SOURCES>
+  </library>
+</component>

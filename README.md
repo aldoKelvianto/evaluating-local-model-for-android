@@ -9,6 +9,11 @@ The project consists of two main components:
 1. **Code Generation** (`notebooks/kotlin/code-generation.ipynb`): A Kotlin Jupyter notebook that generates code using multiple AI models
 2. **Validation** (`run_validation.py`): A Python script that validates the generated code against predefined criteria
 
+## Resources
+
+- **Presentation**: [View presentation](https://docs.google.com/presentation/d/15Olek6cGvy34pL3Eu-saiL5uet1wiMyYw9rP8iXvGPs/edit?usp=sharing)
+- **Result Data**: [View results spreadsheet](https://docs.google.com/spreadsheets/d/14hXsjP8VT2bECxpWwyk-ZZV0U6h8qg2n8zGaHlR1Mk8/edit?usp=sharing)
+
 ## Setup
 
 ### Prerequisites

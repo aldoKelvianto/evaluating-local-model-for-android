@@ -2,17 +2,18 @@
 
 This project evaluates multiple local AI models for generating Kotlin code and code diffs for Android development tasks. It uses LangChain4j to connect to local models (via LM Studio) and validates the generated code using tree-sitter parsing.
 
+More resources for this project:
+
+- **Screen Recording**: [Which Local Model is the “Best” for Android Development?](https://www.youtube.com/watch?v=pYHjJdJaQq0))
+- **Presentation**: [Google Slide](https://docs.google.com/presentation/d/15Olek6cGvy34pL3Eu-saiL5uet1wiMyYw9rP8iXvGPs/edit?usp=sharing)
+- **Result Data**: [Google Sheet](https://docs.google.com/spreadsheets/d/14hXsjP8VT2bECxpWwyk-ZZV0U6h8qg2n8zGaHlR1Mk8/edit?usp=sharing)
+
 ## Overview
 
 The project consists of two main components:
 
 1. **Code Generation** (`notebooks/kotlin/code-generation.ipynb`): A Kotlin Jupyter notebook that generates code using multiple AI models
 2. **Validation** (`run_validation.py`): A Python script that validates the generated code against predefined criteria
-
-## Resources
-
-- **Presentation**: [View presentation](https://docs.google.com/presentation/d/15Olek6cGvy34pL3Eu-saiL5uet1wiMyYw9rP8iXvGPs/edit?usp=sharing)
-- **Result Data**: [View results spreadsheet](https://docs.google.com/spreadsheets/d/14hXsjP8VT2bECxpWwyk-ZZV0U6h8qg2n8zGaHlR1Mk8/edit?usp=sharing)
 
 ## Setup
 
